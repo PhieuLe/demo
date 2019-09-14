@@ -1,0 +1,16 @@
+.col-md-2 ,.col-md-10{
+    padding-left: 0px;
+}
+
+.fa-info-circle{
+    color: #008dff;
+    background-color: white;
+    border-radius: 50%;
+    /* border: 2px black solid; */
+    font-size: 24px;
+}
+.fa-trash{
+    font-size: 22px;
+    padding-left: 10px;
+    color: red;
+}

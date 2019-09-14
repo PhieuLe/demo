@@ -1,0 +1,85 @@
+
+<div class="container">
+  <div>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active">Sinh vien</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h5 class="card-header"><i class="fa fa-th"></i> Danh sach sinh vien</h5>
+    <div class="card-body row">
+      <input class="form-control col-md-2" id="myInput" type="text" placeholder="Search.."><section class="col-md-10"><button class="btn btn-primary width20pt"><i class="fa fa-search"></i></button></section>
+      <br>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>EnrollDate</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr [hidden]="hien">
+            <td>{{students[0].FirstMidName}}</td>
+            <td>{{students[0].LastName}}</td>
+            <td>{{students[0].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[0].ID}}/{{students[0].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhien($event)"></i> </td>
+          </tr>
+          <tr [hidden]="hiena">
+            <td>{{students[1].FirstMidName}}</td>
+            <td>{{students[1].LastName}}</td>
+            <td>{{students[1].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[1].ID}}/{{students[1].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhiena($event)"></i> </td>
+          </tr>
+          <tr [hidden]="hienb">
+            <td>{{students[2].FirstMidName}}</td>
+            <td>{{students[2].LastName}}</td>
+            <td>{{students[2].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[2].ID}}/{{students[2].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhienb($event)"></i> </td>
+          </tr>
+          <tr [hidden]="hienc">
+            <td>{{students[3].FirstMidName}}</td>
+            <td>{{students[3].LastName}}</td>
+            <td>{{students[3].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[3].ID}}/{{students[3].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhienc($event)"></i> </td>
+          </tr>
+          <tr [hidden]="hiend">
+            <td>{{students[4].FirstMidName}}</td>
+            <td>{{students[4].LastName}}</td>
+            <td>{{students[4].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[4].ID}}/{{students[4].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhiend($event)"></i> </td>
+          </tr>
+          <tr [hidden]="hiene">
+            <td>{{students[5].FirstMidName}}</td>
+            <td>{{students[5].LastName}}</td>
+            <td>{{students[5].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[5].ID}}/{{students[5].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhiene($event)"></i> </td>
+          </tr>
+          <tr [hidden]="hienf">
+            <td>{{students[6].FirstMidName}}</td>
+            <td>{{students[6].LastName}}</td>
+            <td>{{students[6].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[6].ID}}/{{students[6].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhienf($event)"></i> </td>
+          </tr>
+          <tr [hidden]="hieng">
+            <td>{{students[7].FirstMidName}}</td>
+            <td>{{students[7].LastName}}</td>
+            <td>{{students[7].EnrollmentDate}}</td>
+            <td><a routerLink="/detail/{{students[7].ID}}/{{students[7].LastName}}"><i class="fa fa-info-circle"></i></a> <i class="fa fa-trash" (click)="anhieng($event)"></i> </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row" style="width: 100%;">
+        <i class="col-md-4">Showing 1 of 3</i>
+        <ul class="pagination justify-content-center col-md-8">
+          <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);"> >> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
