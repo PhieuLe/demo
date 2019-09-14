@@ -1,0 +1,72 @@
+.title{
+    text-align: center;
+    font-family: cursive
+}
+.table{
+    width: 1200px;
+    border: 1px blue solid;
+    margin-left: 260px;
+    border-radius: 24px;
+    overflow: hidden;
+
+}
+.top{
+    height: 70px;
+    background: blue;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+
+
+}
+.bot{
+    background: #fff;
+}
+.filter{
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 10px
+}
+.input{
+    width: 150px;
+    margin-left: 80px;
+
+}
+.a{
+    padding-top: 20px;
+
+}
+b{
+
+}
+.bang{
+    width: 100%;
+    color: blue;
+    margin-top: 20px;
+    font-size: 24px;
+    padding-bottom: 50px;
+
+}
+.button{
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 7px;
+    background: blue;
+    color: #fff;
+    font-weight: 600;
+}
+hr{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+tr{
+    text-align: center;
+}
+.star{
+    text-align: left !important;
+    padding-left: 100px !important;
+
+}

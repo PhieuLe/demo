@@ -1,0 +1,50 @@
+<div class="container">
+  <div>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+      <li class="breadcrumb-item active">Sinh vien</li>
+      <li class="breadcrumb-item active">{{lastname}}</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h5 class="card-header"><i class="fa fa-th"></i> Detail</h5>
+    <div class="card-body">
+      <div>Firstname <br> {{students[0].FirstMidName}}
+        <br>
+           Lastname  <br> {{lastname}}
+        <br>
+           Enrollments  <br> {{students[0].EnrollmentDate}}
+        <br>
+      
+      </div>
+      <br>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Course Title</th>
+            <th>Grade</th>
+            <th>Credits</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr *ngFor="let course of courses">
+            <td>{{course.title}}</td>
+            <td>{{course.Grade}}</td>
+            <td>{{course.credits}}</td>
+          </tr>
+
+          
+        </tbody>
+      </table>
+      <div class="row" style="width: 100%;">
+        <i class="col-md-3">Showing 1 of 3</i>
+        <ul class="pagination justify-content-center col-md-7" >
+          <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);"> >> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

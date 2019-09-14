@@ -1,0 +1,112 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import'https://use.fontawesome.com/releases/v5.7.0/css/all.css';
+
+
+table {
+    margin: 2rem auto;
+    border: 2px solid #000;
+    }
+    table th,table td {
+     padding: 2rem;
+     border: 2px solid #000;
+    }
+.col-2 ,.card-footer ,.text-muted,.card-header{
+    text-align: left;
+}
+.floatright{
+    width: 100%;
+    float: right;
+}
+.cong{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    color: #fff;
+    float: left;
+
+}
+.soluong{
+    float: left;
+    margin-right: 10px;
+}
+.tru{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: #fff;
+    margin-left: 10px;
+    float: left;
+}
+.floatleft{
+    float: left;
+}
+.imgbai3{
+    width: auto;
+    height: 100px;
+}
+.textalignleft{
+    text-align: left;
+}
+.col-sm-3, .col-4 ,.bg-dark {
+    padding: 10px;
+}
+.nav-link{
+    color: #000;
+}
+table{
+   border: 1px solid #000   ;
+}
+tr>th,tr>td{
+    padding: 2rem;
+    border: none;
+}
+.fa{
+    margin-right: 10px;
+}
+.nav-pills>.nav-item>.nav-link{
+    color: #fff;
+}
+.nav-pills>.nav-item>.nav-link:hover{
+    color: #f00;
+}
+.margin-left20px{
+    margin-left: 20px;
+}
+h2{
+    font-weight: bold;
+    padding: 10px;
+    animation: beautyfulgirl 1s infinite;
+}
+.search{
+    height: 38px;
+    border-radius: 14px;
+    
+}
+.mainLoginInput { 
+    font-family: FontAwesome;
+    }
+.contai{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 0;
+} 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+} 
+@keyframes beautyfulgirl{
+    0%{
+        color: #000;
+    }
+    50%{
+        color: #f00;
+
+    }
+    100%{
+        color: #000;
+    }
+}

@@ -1,0 +1,297 @@
+<h2>Bài 1</h2>
+<div class="container">
+<img src="{{students[0].photo}}" width="400px" height="auto">
+<ul>
+    <li>{{students[0].fullName}}</li>
+    <li>{{students[0].birthday}}</li>
+    <li>{{students[0].gender}}</li>
+    <li>{{students[0].mark}}</li>
+    <li><i class="fa fa-paint-brush"></i></li>
+</ul></div>
+<h2>Bài 2</h2>
+<table>
+    <thead>
+    <tr>
+    <th scope="col">Hình</th>
+    <th scope="col">Họ và Tên</th>
+    <th scope="col">Ngày Sinh</th>
+    <th scope="col">Giới tính</th>
+    <th scope="col">Điểm</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><img src="{{students[0].photo}}" width="100px"
+   height="auto" alt="students[0].fullName"></td>
+    <td>{{students[0].fullName}}</td>
+    <td>{{students[0].birthday}}</td>
+    <td>{{students[0].gender}}</td>
+    <td>{{students[0].mark}}</td>
+    </tr>
+    <tr>
+    <td><img src="{{students[1].photo}}" width="100px"
+   height="auto" alt="students[0].fullName"></td>
+    <td>{{students[1].fullName}}</td>
+    <td>{{students[1].birthday}}</td>
+    <td>{{students[1].gender}}</td>
+    <td>{{students[1].mark}}</td>
+    </tr>
+    <tr>
+    <td><img src="{{students[2].photo}}" width="100px"
+   height="auto" alt="students[0].fullName"></td>
+    <td>{{students[2].fullName}}</td>
+    <td>{{students[2].birthday}}</td>
+    <td>{{students[2].gender}}</td>
+    <td>{{students[2].mark}}</td>
+    </tr>
+    </tbody>
+   </table>
+
+   <table>
+    <thead>
+    <tr>
+    <th scope="col">Hình</th>
+    <th scope="col">Họ và Tên</th>
+    <th scope="col">Ngày Sinh</th>
+    <th scope="col">Giới tính</th>
+    <th scope="col">Điểm</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of students">
+    <td><img src="{{student.photo}}" width="100px" height="auto"
+   alt="students.fullName"></td>
+    <td>{{student.fullName}}</td>
+    <td>{{student.birthday}}</td>
+    <td>{{student.gender}}</td>
+    <td>{{student.mark}}</td>
+    </tr>
+   </table>
+<h2>Bài 3</h2>
+<div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Cart</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+                <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col" colspan="2">IMAGE</th>
+                            <th scope="col">NAME</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qualiti</th>
+                            <th scope="col">Action</th>
+                      
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr [hidden]= "deletelana">
+                            <th scope="row">{{baiba[0].id}}</th>
+                            <td colspan="2"><img src="{{baiba[0].image}}" class="imgbai3" ></td>
+                            <td>{{baiba[0].name}}</td>
+                            <td>{{baiba[0].price}}</td>
+                            <td><div class="floatleft"><div class="soluong">{{soluonga}}</div><button class="cong" (click)="conga($event)" >+</button>
+                              <button class="tru" (click)="trua($event)">-</button></div></td>
+                            <td><div class="floatleft"><button class="btn btn-primary">view</button>
+                                <button class="btn btn-danger" style="margin-left: 10px" (click)="deletea($event)">delete</button></div></td>
+                          </tr>
+                          <tr [hidden]= "deletelanb">
+                            <th scope="row">{{baiba[1].id}}</th>
+                            <td colspan="2"><img src="{{baiba[1].image}}" class="imgbai3" ></td>
+                            <td>{{baiba[1].name}}</td>
+                            <td>{{baiba[1].price}}</td>
+                            <td><div class="floatleft"><div class="soluong">{{soluongb}}</div><button class="cong" (click)="congb($event)" >+</button>
+                              <button class="tru" (click)="trub($event)">-</button></div></td>
+                            <td><div class="floatleft"><button class="btn btn-primary">view</button>
+                                <button class="btn btn-danger" style="margin-left: 10px" (click)="deleteb($event)">delete</button></div></td>
+                          </tr>
+                          <tr [hidden]= "deletelanc">
+                            <th scope="row">{{baiba[2].id}}</th>
+                            <td colspan="2"><img src="{{baiba[2].image}}" class="imgbai3" ></td>
+                            <td>{{baiba[2].name}}</td>
+                            <td>{{baiba[2].price}}</td>
+                            <td><div class="floatleft"><div class="soluong">{{soluongc}}</div><button class="cong" (click)="congc($event)" >+</button>
+                              <button class="tru" (click)="truc($event)">-</button></div></td>
+                            <td><div class="floatleft"><button class="btn btn-primary">view</button>
+                                <button class="btn btn-danger" style="margin-left: 10px" (click)="deletec($event)">delete</button></div></td>
+                          </tr>
+                          <tr [hidden]= "deleteland">
+                            <th scope="row">{{baiba[3].id}}</th>
+                            <td colspan="2"><img src="{{baiba[3].image}}" class="imgbai3" ></td>
+                            <td>{{baiba[3].name}}</td>
+                            <td>{{baiba[3].price}}</td>
+                            <td><div class="floatleft"><div class="soluong">{{soluongd}}</div><button class="cong" (click)="congd($event)" >+</button>
+                              <button class="tru" (click)="trud($event)">-</button></div></td>
+                            <td><div class="floatleft"><button class="btn btn-primary">view</button>
+                                <button class="btn btn-danger" style="margin-left: 10px" (click)="deleted($event)">delete</button></div></td>
+                          </tr>
+                          <tr><td>Total</td>
+                          <td colspan="6" style="text-align: right">{{Total}}</td></tr>
+                        </tbody>
+                      </table>
+        </div>
+      </div>
+<h2>Bài 4</h2>
+<!--phan1-->
+<div class="card text-center">
+    <div class="card-header">
+      leaf rake
+    </div>
+    <div class="card-body row textalignleft">
+    <div class="col-5">
+      <div class="row"><div class="col-4"> Name</div><div class="col-8"> {{product[0].productName}}</div></div>
+      <div class="row"><div class="col-4">Code</div><div class="col-8">{{product[0].productCode}}</div></div>
+      <div class="row"><div class="col-4">Descrition</div> <div class="col-8"> {{product[0].description}}</div></div>
+      <div class="row"><div class="col-4">Avaliabliti  </div><div class="col-8">{{product[0].releaseDate}}</div></div>
+      <div class="row"><div class="col-4">Price </div><div class="col-8"> {{product[0].price}}</div></div>
+      <div class="row"><div class="col-4">5 Strart Rating </div><div class="col-8"> {{product[0].starRating}}</div></div>
+    </div>
+    <div class="col-7">
+            <img src="{{product[0].imageUrl}}" width="150px" height="auto" alt="product.imageUrl">
+    </div>
+    </div>
+    <div class="card-footer text-muted">
+        <i class="fas fa-arrow-left"></i>back
+    </div>
+  </div>
+  <br>
+<!--phan2-->
+<div class="card">
+    <div class="card-header">
+      List product
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+      <div class="row"><div class="col-2">Filter by: </div><div class="col-10"><input class="form-control" id="myInput" type="text" placeholder="Search.." style="width:200px"></div></div> 
+  <br><h2>Filter by:</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><button class="btn btn-primary" (click)="toggleFogot($event)" >Show Image</button></th>
+        <th>Product</th>
+        <th>Code</th>
+        <th>Avaliable</th>
+        <th>Price</th>
+        <th>5 Start Rating</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+        <tr *ngFor="let product of product">
+            <td><img src="{{product.imageUrl}}" [hidden]= "fogot" width="100px" height="auto"
+           alt="product.imageUrl"></td>
+            <td>{{product.productId}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productCode}}</td>
+            <td>{{product.releaseDate}}</td>
+            <td>{{product.starRating}}</td>
+            </tr>
+    </tbody>
+  </table>
+      </blockquote>
+    </div>
+  </div>
+<h2>Bài 5</h2>    
+<div class="body" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-2 col-3 bg-dark " id="myScrollspy">
+        <ul>
+            <i class="fas fa-bars" style="float: right; color:#fff;font-size: 40px;"></i>
+        </ul>
+        <ul>
+          <img src="../assets/image/icongetbootstrap.png" class="imgbai3 margin-left20px">
+        </ul>
+        <ul class="nav nav-pills flex-column ">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2"><i class="fa fa-user-circle"></i> Employees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="fa fa-folder-open"></i>Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="fa fa-paint-brush"></i>Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="fa fa-gift"></i> Interns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="fa fa-bookmark"></i>Topic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="fa fa-book"></i>Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="fa fa-bookmark"></i> topic_courser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3"><i class="fa fa-file"></i>Classes</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-sm-10 col-9">
+        <div class="contai">
+          <div >
+              <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">Skills</li>
+              </ul>
+          </div>
+          <div class="row">
+            <div class="col"><b>Show</b>
+                             <input type="number" value="10" class="search" style="width:50px; text-align:center">
+                             <b>Address</b></div>
+            <div class="col"><button class="btn btn-primary fa">Email</button>
+                             <button class="btn btn-primary fa">PDF</button>  
+                             <input type="text" class="search fa" placeholder="&#61442; Search">
+                             <button class="btn btn-primary fa"><i class="fa fa-plus"></i> Add Employee</button>          
+
+
+            </div>
+          </div>            
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr *ngFor="let bainam of bainam">
+                <td>{{bainam.id}}</td>
+                <td>{{bainam.firstname}}</td>
+                <td>{{bainam.lastname}}</td>
+                <td>{{bainam.email}}</td>
+                <td><button class="btn btn-primary fa">edit</button>
+                    <button class="btn btn-danger">delete</button></td>
+              </tr>
+              <tr><td colspan="5"><ul class="pagination justify-content-end">
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                  <li class="page-item active"><a class="page-link" href="javascript:void(0);">2</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                </ul></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
