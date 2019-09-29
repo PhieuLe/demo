@@ -1,0 +1,252 @@
+<body>
+  <div class="container-fluid banner">
+    <img src="http://movietnam.vn/images/upload/images/hinh%20dao%20tao%203.png" class="img">
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+
+    <div class="row" style="width:100%">
+      <div class="navbar-nav col-md-9">
+        <div class="nav-item">
+           <a class="nav-link" routerLink="/trangchu"> <img src="./assets/image/logoaztest.png" width=150px>Trang chủ</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" routerLink="/gioithieu">Giới thiệu</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" routerLink="/gopy">Góp ý</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" routerLink="/hoidap">Hỏi đáp</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="navbar-nav">
+          <a class="nav-link" id="login" data-toggle="modal" data-target="#myModal"><i class="fa fa-user-circle" aria-hidden="true"></i>Đăng nhập</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <div class="row" style="margin-top: 50px">
+  <div class="col-md-9">
+    <h2>Kiểm Tra lập trình PHP căn bản</h2><br>
+    <h4>Thời gian :120'</h4><br>
+  </div>
+  <div class="col-md-3">
+      <iframe class="iframes" src="./assets/image/abcd.html" frameborder="0" allowtransparency="true" scrolling="no" width="500px" height="200px">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+  </div>
+</div>
+  <div class="container-fluid row" style="margin-bottom: 50px;"><br>
+    <div class="col-md-9">
+      <div class="container">
+
+        <div class="card">
+          <div class="card-header">Lê Khả Phiêu(CD18LW1)</div>
+          <div class="card-body">
+            <table class="table table-striped">
+              <tbody
+                *ngFor="let questions of question | orderBy: nameno | paginate: { itemsPerPage: itempage, currentPage: p }">
+
+                <tr>
+                  <td>{{questions.stt}}.{{questions.debai}}</td>
+                </tr>
+
+                <tr>
+                  <td>{{questions.cauhoi}}</td>
+                </tr>
+                <tr>
+                  <td><b class="fa">A.</b>{{questions.a}}</td>
+                </tr>
+                <tr>
+                  <td><b class="fa">B.</b>{{questions.b}}</td>
+                </tr>
+                <tr>
+                  <td><b class="fa">C.</b>{{questions.c}}</td>
+                </tr>
+                <tr>
+                  <td><b class="fa">D.</b>{{questions.d}}</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="card-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card cotdoc">
+        <ul>
+          <li class="page-item"><a class="page-link" href="#" (click)="Previous()"><i class="fa fa-angle-double-left" aria-hidden="true"></i>Previous </a></li>
+          <li class="page-item">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+          </li>
+          <li class="page-item"><a class="page-link" href="#" (click)="next()"> Next<i class="fa fa-angle-double-right" aria-hidden="true"></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- footer-->
+  <footer class="footer">
+    <div class="container row">
+      <div class="col-2">
+        <h6>VỀ CHÚNG TÔI</h6><br>
+        Liên hệ  <img src="./assets/image/logoaztest.png" width=70px>.vn<br>
+        Giới thiệu  <img src="./assets/image/logoaztest.png" width=70px><br>
+        Quy chế hoạt động
+      </div>
+      <div class="col-3">
+        <h6>DÀNH CHO NGƯỜI MUA</h6><br>
+        Giải quyết khiếu nại<br>
+        Hướng dẫn mua hàng<br>
+        Chính sách đổi trả<br>
+        Chăm sóc khách hàng<br>
+        Nạp tiền điện thoại
+      </div>
+      <div class="col-3">
+        <h6>DÀNH CHO NGƯỜI BÁN</h6><br>
+        Mở bài thi trên  <img src="./assets/image/logoaztest.png" width=70px><br>
+        Quy định đối với người bán<br>
+        Chính sách bán hàng<br>
+        Hệ thống tiêu chí kiểm duyệt
+      </div>
+      <div class="col-4" style="position:absolute; margin-left:42%">
+        <h6>ĐĂNG KÝ NHẬN BẢN TIN ƯU ĐÃI KHỦNG TỪ  <img src="./assets/image/logoaztest.png" width=70px></h6>
+        <form>
+          <div class="timkiem" style="width:250px">
+            <input class="form-control" placeholder="Email của bạn là " value="" style="width:250px; position:absolute">
+          </div>
+          <div><input type="button" class="btntimkiem bg-danger"
+              style="width: 90px;position: absolute;margin-left: 255px;" value="Đăng kí">
+          </div>
+          <div class="gioitinh form-check-inline">
+            <input type="radio" name="gt" class="form-check-input"><b class="gt">NAM</b>
+            <input type="radio" name="gt" class="form-check-input"><b class="gt">NỮ</b>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer">
+    <div class="container" style=" text-align:right;">
+      Copyright © 2012 <img src="./assets/image/logoaztest.png" width=70px>.vn<br/>
+  
+  Công ty Cổ phần Công nghệ Sendo, thành viên của Tập đoàn <img src="../assets/image/fpticon.svg"><br/>
+  
+  Số ĐKKD: 0312776486 - Ngày cấp: 13/05/2014, được sửa đổi lần thứ 6, ngày 23/05/2016.<br/>
+  
+  Cơ quan cấp: Sở Kế hoạch và Đầu tư TPHCM.<br/>
+  
+  Địa chỉ: Tòa nhà FPT Tân Thuận, Lô 29B-31B-33B, Đường Tân Thuận, KCX Tân Thuận, Phường Tân Thuận Đông, Quận 7, Tp.HCM.<br/>
+  
+  Email: lienhe@ <img src="./assets/image/logoaztest.png" width=70px>.vn<br/>
+  
+      </div>
+  </footer>
+  <footer style="margin-top:30px; margin-bottom:50px">
+    <div class="container">
+        <div class="row" style="margin-left:0">
+            <div class=" col-md-9">
+              <div class="cachthucvanchuyen">
+                <b>CÁCH THỨC THANH TOÁN</b><BR>
+                  <ul>
+                    <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img"   src="../assets/image/matercard.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/visa.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/jcb.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/napas.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/vietcom.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/tpbank.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/vietinbank.png"></li>
+                  </ul>
+                  </div>
+                  <div class="clearfix"></div>
+                <div class="doitacvanchuyen">
+                <b>ĐỐI TÁC VẬN CHUYỂN</b>
+                <ul>
+                    <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/vnp.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/vt.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/ghn.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/nj.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/dlh.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/vc.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/ahamove.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/grap.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/jvt.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/sl.png"></li>
+                      <li class="phuongthucthanhtoan"><img class="phuongthucthanhtoan_img" src="../assets/image/ship.png"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <b style="margin-left: 70px;">CHỨNG NHẬN</b>
+                  <img src="../assets/image/dadangki.gif">
+                  <img src="../assets/image/noikhong.png">
+              </div>
+          </div>
+      </div>
+  </footer>
+  <footer style="border-top:1px #ccc solid; margin-bottom:50px">
+    <div class="container" style="margin-top:20px;">
+      <button class="btn mg_20">Đồng Hồ</button> 
+      <button class="btn mg_20">SHOPPING Mall </button>
+      <button class="btn mg_20">Hãy Trao Cho Anh </button>
+      <button class="btn mg_20">OPPO</button>
+      <button class="btn mg_20">Tivi</button>
+      <button class="btn mg_20">Mỹ phẩm hàn quốc</button>
+      <button class="btn mg_20">Kem chống nắng</button>
+      <button class="btn mg_20">Chợ Tốt</button>
+      <button class="btn mg_20">Nước hoa</button>
+      <button class="btn mg_20">Innisfree</button>
+      <button class="btn mg_20">Đồ chơi</button>
+      <button class="btn mg_20"> nấu ăn</button>
+      <button class="btn mg_20">Laptop</button>
+      <button class="btn mg_20">IPhone 6</button> 
+      </div>
+  </footer>
+<!--modal-->
+<!-- The Modal -->
+<div class="modal fade" id="myModal" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"> 
+        
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Đăng Nhập</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="fb"> <span> 
+            <!--fb --> 
+            <svg style="margin-left:0px" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-btn-login-social icon">
+            <path d="M11.873 16.021v-3.107c0.463 0 0.908-0.019 1.351 0.007 0.333 0.017 0.448-0.088 0.449-0.436 0.005-0.837 0-1.681 0.101-2.509 0.193-1.569 1.149-2.512 2.72-2.779 0.253-0.044 0.515-0.079 0.772-0.080 0.929-0.009 1.86-0.004 2.817-0.004v3.097c-0.455 0-0.899-0.003-1.344 0-1.38 0.013-1.351 0.375-1.34 1.327 0.004 0.307 0.021 0.616-0.007 0.92-0.032 0.353 0.075 0.48 0.445 0.467 0.741-0.029 1.484-0.009 2.288-0.009-0.032 0.351-0.056 0.673-0.091 0.995-0.064 0.611-0.147 1.219-0.195 1.829-0.019 0.244-0.125 0.289-0.336 0.285-0.565-0.009-1.133 0.016-1.697-0.011-0.328-0.016-0.419 0.089-0.417 0.413 0.013 2.624 0.008 5.249 0.007 7.873 0 0.58 0 0.58-0.576 0.58-0.908 0-1.817-0.015-2.725 0.008-0.349 0.009-0.437-0.111-0.437-0.443 0.011-2.637 0.007-5.273 0.007-7.909 0-0.515-0.001-0.515-0.523-0.515h-1.269z" fill="white"></path>
+            </svg> 
+            <!--ganh doc --> 
+            <svg height="10" width="30" style="margin-left:0px">
+            <line x1="10" y1="0" x2="10" y2="10" style="stroke:white;stroke-width:1"></line>
+            Trình duyệt không hỗ trợ SVG. </svg> </span> <span class="modalspan_mid font-weight-bold">facebook</span> </div>
+          
+          <!-- google -->
+          <div class="gg"> <span><svg style="margin-left:0px" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-btn-login-social icon">
+            <path d="M29.333 14.857h-2.303v-2.285h-2.304v2.285h-2.303v2.285h2.303v2.285h2.304v-2.285h2.303v-2.285zM12.060 14.857v2.743h4.573c-0.187 1.177-1.383 3.452-4.573 3.452-2.752 0-4.997-2.264-4.997-5.052s2.245-5.052 4.997-5.052c1.567 0 2.613 0.664 3.213 1.235l2.187-2.091c-1.403-1.305-3.221-2.092-5.399-2.092-4.457 0-8.061 3.577-8.061 8s3.604 8 8.060 8c4.653 0 7.739-3.245 7.739-7.817 0-0.525-0.057-0.925-0.127-1.325h-7.612z" fill="white"></path>
+            </svg> 
+            <!--ganh doc --> 
+            <svg height="10" width="30" style="margin-left:0px">
+            <line x1="10" y1="0" x2="10" y2="10" style="stroke:white;stroke-width:1"></line>
+            Trình duyệt không hỗ trợ SVG. </svg> <span class="modalspan_mid font-weight-bold">Google +</span> </span> </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer" style="font-weight:400;"> <i class="modal_bottom" style="margin-right:55%">Đã có  <img src="./assets/image/logoaztest.png" width=70px>ID</i> <i class="modal_bottom">Đăng kí</i> </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal-->
+ 
+</body>
