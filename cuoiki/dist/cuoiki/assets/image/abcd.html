@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://codepen.io/mattlitzinger/pen/ysowF -->
+<html lang="en" class="pc chrome77 js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Countdown Clock</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CodePen">
+<meta name="twitter:title" content="Countdown Clock">
+<meta name="twitter:description" content="...">
+<meta name="twitter:image" content="https://screenshot.codepen.io/10638.ysowF.3b9c57ea-cc99-4efd-a4cb-1bcca33464c3.png">
+<meta name="twitter:creator" content="@mattlitzinger">
+<meta property="og:image" content="https://codepen.io/mattlitzinger/pen/ysowF/image/large.png" itemprop="thumbnailUrl">
+<meta property="og:title" content="Countdown Clock">
+<meta property="og:url" content="https://codepen.io/mattlitzinger/details/ysowF">
+<meta property="og:site_name" content="CodePen">
+<meta property="og:description" content="...">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https://codepen.io/mattlitzinger/pen/ysowF&amp;format=json" title="Countdown Clock">
+<link href="./abcd_files/css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="./abcd_files/global-f5e056df0853a9b2efd5aecc6d45444a5674ecfa8a75c07da89664f01f3b3f81.css">
+<link rel="stylesheet" media="screen" href="./abcd_files/2-be2d1967.chunk.css">
+<link rel="stylesheet" media="screen" href="./abcd_files/everypage-4cded9e6.css">
+<link rel="stylesheet" media="all" href="./abcd_files/editor-406f5441e8d85362f54f54d9b3f469a430064a01fdd79a82b88b1f11bf4e9605.css">
+<meta name="description" content="...">
+<link rel="stylesheet" media="screen" href="./abcd_files/twilight-86b2d8d64ce08f901b8946aeefde8b37185c1b1699748e443c7040ab6fc223e4.css" id="cm-theme">
+<style id="cm-font-family" class="cm-font-family">
+  
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-family: Monaco, MonoSpace;
+  }
+</style>
+<style id="cm-font-size">
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-size: 14px;
+  }
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<script type="text/javascript" async="" src="./abcd_files/analytics.js.tải xuống"></script><script async="" src="./abcd_files/js"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="lNWKXrI8xIQYxq1+ZD+A2k2c0ncQJKSsEvA/wN3RK7h5nwe0wdZuP+ENSH0AlucFsv7zqQxhp1qPHcUSyaMluw==">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script>/* Firefox needs this to prevent FOUC. */</script>
+</head>
+<body class="room-editor editor state-htmlOn-cssOn-jsOn sidebar-false   layout-top  logged-out unsaved" sapling-installed="true" crio-installed="true">
+
+
+
+
+
+<div class="page-wrap twilight">
+<div class="boxes">
+
+
+
+<section id="drawer" class="drawer comments">
+</section>
+<div class="output-container">
+<div class="output-sizer">
+<div id="result_div" class="result"><iframe id="iFrameKey-925e83d4-29a4-5277-1493-a99b0314533a" src="./abcd_files/index.html" name="CodePen" allowfullscreen="true" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" allowtransparency="true" allowpaymentrequest="true" class="result-iframe"></iframe>
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="keycommands" class="modal modal-neutral">
+<section class="editor-commands" style="padding-right: 10px;">
+ <h2>Editor Commands</h2>
+<div class="key-group">
+<kbd class="command-no-mod">
+<span class="pc_only">Ctrl</span>
+<span class="mac_only">Ctrl</span>
+Space
+</kbd>
+Autocomplete (if available)
+</div>
+<div class="key-group">
+<kbd class="command">F</kbd>
+Find
+</div>
+<div class="key-group">
+<kbd class="command">G</kbd>
+Find Next
+</div>
+<div class="key-group">
+<kbd class="command">⇧G</kbd>
+Find Previous
+</div>
+<div class="key-group">
+<span class="command pc_only">Shift F</span>
+<span class="command mac_only">Opt F</span>
+Find &amp; Replace
+</div>
+<div class="key-group">
+<kbd class="command">[</kbd>
+Indent Code Right
+</div>
+<div class="key-group">
+<kbd class="command">]</kbd>
+Indent Code Left
+</div>
+<div class="key-group">
+<kbd class="command-no-mod">⇧ Tab</kbd>
+Auto Indent Code
+</div>
+<div class="key-group">
+<kbd class="command">/</kbd>
+Line Comment
+</div>
+<div class="key-group">
+<kbd class="command">
+<span class="pc_only">⇧</span>
+<span class="mac_only">Opt</span>
+/
+</kbd>
+Block Comment
+</div>
+<p style="margin: 20px 0 0 0;">Also see: <a href="https://blog.codepen.io/documentation/features/tab-triggers/" target="_blank" rel="noopener">Tab Triggers</a></p>
+</section>
+<section class="editor-commands">
+<h2>HTML Specific</h2>
+<div class="key-group">
+<kbd class="command">⇧A</kbd>
+Wrap With...
+</div>
+<h2>Misc</h2>
+<div class="key-group">
+<kbd class="command">⇧7</kbd>
+Re-run Preview
+</div>
+<div class="key-group">
+<kbd class="command">⇧8</kbd>
+Clear All Analyze Errors
+</div>
+<div class="key-group">
+<kbd class="command">⇧9</kbd>
+Open This Dialog
+</div>
+<h2>Pen Actions</h2>
+<div class="key-group">
+<kbd class="command">P</kbd>
+Create New Pen
+</div>
+<div class="key-group">
+<kbd class="command">S</kbd>
+Save
+</div>
+<div class="key-group">
+<kbd class="command">I</kbd>
+Info Panel (if owned)
+</div>
+</section>
+</div>
+<div id="popup-overlay" class="overlay popup-overlay"></div>
+<div id="modal-overlay" class="overlay modal-overlay"></div>
+<div id="react-popups" class="react-popups"></div>
+<noscript>
+
+  <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+
+  <div class="overlay noscript-overlay" style="display: block;"></div>
+
+  <div class="modal modal-message group modal-warning">
+
+    <div class="modal-title">CodePen requires JavaScript to render the code and preview areas in this view.</div>
+
+    <p>Trying <a href="https://codepen.io/mattlitzinger/debug/ysowF">viewing this Pen in Debug Mode</a>, which is the preview area without any iframe and does not require JavaScript. Although what the preview is of might!</p>
+
+    <p>Need to know how to enable JavaScript? <a href="http://enable-javascript.com/" target="_blank" rel="noopener">Go here.</a></p>
+
+    <label class="button button-medium" for="modal-closing-trick">Close this, use anyway.</label>
+
+  </div>
+
+</noscript>
+<input type="hidden" id="init-data" value="{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown&quot;,&quot;mobile&quot;:null,&quot;name&quot;:&quot;chrome&quot;,&quot;platform&quot;:&quot;pc&quot;,&quot;version&quot;:&quot;77&quot;},&quot;__analytics&quot;:{&quot;controllerActionName&quot;:&quot;show&quot;,&quot;controllerName&quot;:&quot;pen&quot;,&quot;enabled&quot;:true},&quot;__remote_addr&quot;:&quot;42.118.69.100&quot;,&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media&quot;,&quot;iframe_sandbox&quot;:&quot;allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts&quot;},&quot;__env&quot;:&quot;production&quot;,&quot;__turnOffJS&quot;:false,&quot;__constants&quot;:{&quot;grid_iframe_sandbox_attributes&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin&quot;},&quot;__user&quot;:{&quot;anon&quot;:true,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;hashid&quot;:&quot;VoDkNZ&quot;,&quot;id&quot;:1,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;owner_id&quot;:&quot;VoDkNZYdEzGn&quot;,&quot;paid&quot;:false,&quot;session_hash&quot;:&quot;14e62a4572570131cc4de9bf2f024b55&quot;,&quot;tier&quot;:0,&quot;username&quot;:&quot;anon&quot;},&quot;__firestore&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiVm9Ea05aWWRFekduIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNTcwMzM3MDkzLCJpYXQiOjE1NzAzMzM0OTMsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IlZvRGtOWiJ9.6xbw0XgVMcyWChW2fPU9xNz_y95NwB9irkYi-5tdX3YJHm_t378z_443KczSh2b7wfuwzROmGQrVNa67zn1rnCo1qsEh4Q0V69a0B0-nn-ZTQ06wlBwqptOEBkwPyoIaJdD2WVX1KQumHrqofW0Pz_krcRL2MG_eAHjPDoe3Llj_snJYvSDGvHiQZ9Uiws1vPWcrw_FayE09wwgE8HRL_PGmrqRyPL2FROLIvJ3u9ugupZOyKaqTXn_twmhU3sLaWFEBV856uqo8sjGdFEHT6P8nGWWo_8HDz5GKmEJCpf-iHEfR2i7vh8kJN0xFKbAMoN-TWr_xohKiC9UOqZIRIA&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;canCreatePosts&quot;:false,&quot;currentContext&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;contextType&quot;:&quot;USER&quot;,&quot;projectLimitations&quot;:{&quot;projects&quot;:0,&quot;usedProjects&quot;:0,&quot;__typename&quot;:&quot;ProjectLimitations&quot;},&quot;privateByDefault&quot;:false,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;admin&quot;:false,&quot;anon&quot;:true,&quot;pro&quot;:false,&quot;teams&quot;:[],&quot;permissions&quot;:{&quot;canCreatePrivate&quot;:false,&quot;__typename&quot;:&quot;UserPermissions&quot;},&quot;__typename&quot;:&quot;User&quot;}}},&quot;__pageType&quot;:&quot;pen&quot;,&quot;__jwt&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InBhaWQiOmZhbHNlLCJ0ZWFtX2lkIjoiWWRFekduIiwidXNlcl9pZCI6IlZvRGtOWiIsInVzZXJuYW1lIjoiYW5vbiJ9LCJleHAiOjE1NzA0MTk4OTN9.lHdCLM92saz8p_SX7H5w0akNwtbdRAC5bQA8DLRMKpc&quot;,&quot;__boomboom&quot;:{&quot;serve_url&quot;:&quot;https://cdpn.io/boomboom/v2/index.html&quot;,&quot;store_url&quot;:&quot;https://cdpn.io/boomboom/v2/store&quot;},&quot;__preprocessors_url&quot;:&quot;https://wfwf9k3tn7.execute-api.us-west-2.amazonaws.com/production&quot;,&quot;__layoutType&quot;:null,&quot;__rtData&quot;:&quot;{\&quot;maxMembers\&quot;:0,\&quot;roomID\&quot;:\&quot;ysowF/live\&quot;,\&quot;roomType\&quot;:\&quot;live\&quot;,\&quot;updatedAt\&quot;:1412821260,\&quot;user\&quot;:{\&quot;id\&quot;:\&quot;VoDkNZ\&quot;,\&quot;hashid\&quot;:\&quot;VoDkNZ\&quot;,\&quot;name\&quot;:\&quot;Captain Anonymous\&quot;,\&quot;username\&quot;:\&quot;anon\&quot;,\&quot;role\&quot;:\&quot;editor\&quot;}}&quot;,&quot;__item&quot;:&quot;{\&quot;custom_screenshot\&quot;:null,\&quot;editor_settings\&quot;:{\&quot;theme\&quot;:\&quot;twilight\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;font_type\&quot;:\&quot;monaco\&quot;,\&quot;font_size\&quot;:\&quot;14\&quot;,\&quot;key_bindings\&quot;:\&quot;normal\&quot;,\&quot;indent_with\&quot;:\&quot;spaces\&quot;,\&quot;tab_size\&quot;:\&quot;2\&quot;,\&quot;auto_run\&quot;:true,\&quot;line_numbers\&quot;:true,\&quot;line_wrapping\&quot;:true,\&quot;code_folding\&quot;:true,\&quot;match_brackets\&quot;:true,\&quot;autocomplete\&quot;:false,\&quot;emmet_active\&quot;:true,\&quot;snippets\&quot;:{\&quot;markupSnippets\&quot;:{},\&quot;stylesheetSnippets\&quot;:{}}},\&quot;hashid\&quot;:\&quot;dyOQEN\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;npm_packages\&quot;:{},\&quot;owner_id\&quot;:\&quot;DnqymZYdEzGn\&quot;,\&quot;resources\&quot;:[{\&quot;url\&quot;:\&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js\&quot;,\&quot;order\&quot;:0,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;action\&quot;:\&quot;include_js_url\&quot;,\&quot;content\&quot;:\&quot;\&quot;,\&quot;original_content\&quot;:\&quot;\&quot;,\&quot;text_to_replace\&quot;:null}],\&quot;tags\&quot;:[\&quot;javascript\&quot;,\&quot;clock\&quot;,\&quot;countdown\&quot;],\&quot;id\&quot;:1537579,\&quot;user_id\&quot;:10638,\&quot;html\&quot;:\&quot;&lt;div id=\\\&quot;countdown\\\&quot;&gt;\\n  &lt;div id=&#39;tiles&#39;&gt;&lt;/div&gt;\\n  &lt;div class=\\\&quot;labels\\\&quot;&gt;\\n    &lt;li&gt;Days&lt;/li&gt;\\n    &lt;li&gt;Hours&lt;/li&gt;\\n    &lt;li&gt;Mins&lt;/li&gt;\\n    &lt;li&gt;Secs&lt;/li&gt;\\n  &lt;/div&gt;\\n&lt;/div&gt;\&quot;,\&quot;css\&quot;:\&quot;body{ \\n\\tfont: normal 13px/20px Arial, Helvetica, sans-serif; word-wrap:break-word;\\n\\tcolor: #eee;\\n\\tbackground: #353535;\\n}\\n#countdown{\\n\\twidth: 465px;\\n\\theight: 112px;\\n\\ttext-align: center;\\n\\tbackground: #222;\\n\\tbackground-image: -webkit-linear-gradient(top, #222, #333, #333, #222); \\n\\tbackground-image:    -moz-linear-gradient(top, #222, #333, #333, #222);\\n\\tbackground-image:     -ms-linear-gradient(top, #222, #333, #333, #222);\\n\\tbackground-image:      -o-linear-gradient(top, #222, #333, #333, #222);\\n\\tborder: 1px solid #111;\\n\\tborder-radius: 5px;\\n\\tbox-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);\\n\\tmargin: auto;\\n\\tpadding: 24px 0;\\n\\tposition: absolute;\\n  top: 0; bottom: 0; left: 0; right: 0;\\n}\\n\\n#countdown:before{\\n\\tcontent:\\\&quot;\\\&quot;;\\n\\twidth: 8px;\\n\\theight: 65px;\\n\\tbackground: #444;\\n\\tbackground-image: -webkit-linear-gradient(top, #555, #444, #444, #555); \\n\\tbackground-image:    -moz-linear-gradient(top, #555, #444, #444, #555);\\n\\tbackground-image:     -ms-linear-gradient(top, #555, #444, #444, #555);\\n\\tbackground-image:      -o-linear-gradient(top, #555, #444, #444, #555);\\n\\tborder: 1px solid #111;\\n\\tborder-top-left-radius: 6px;\\n\\tborder-bottom-left-radius: 6px;\\n\\tdisplay: block;\\n\\tposition: absolute;\\n\\ttop: 48px; left: -10px;\\n}\\n\\n#countdown:after{\\n\\tcontent:\\\&quot;\\\&quot;;\\n\\twidth: 8px;\\n\\theight: 65px;\\n\\tbackground: #444;\\n\\tbackground-image: -webkit-linear-gradient(top, #555, #444, #444, #555); \\n\\tbackground-image:    -moz-linear-gradient(top, #555, #444, #444, #555);\\n\\tbackground-image:     -ms-linear-gradient(top, #555, #444, #444, #555);\\n\\tbackground-image:      -o-linear-gradient(top, #555, #444, #444, #555);\\n\\tborder: 1px solid #111;\\n\\tborder-top-right-radius: 6px;\\n\\tborder-bottom-right-radius: 6px;\\n\\tdisplay: block;\\n\\tposition: absolute;\\n\\ttop: 48px; right: -10px;\\n}\\n\\n#countdown #tiles{\\n\\tposition: relative;\\n\\tz-index: 1;\\n}\\n\\n#countdown #tiles &gt; span{\\n\\twidth: 92px;\\n\\tmax-width: 92px;\\n\\tfont: bold 48px &#39;Droid Sans&#39;, Arial, sans-serif;\\n\\ttext-align: center;\\n\\tcolor: #111;\\n\\tbackground-color: #ddd;\\n\\tbackground-image: -webkit-linear-gradient(top, #bbb, #eee); \\n\\tbackground-image:    -moz-linear-gradient(top, #bbb, #eee);\\n\\tbackground-image:     -ms-linear-gradient(top, #bbb, #eee);\\n\\tbackground-image:      -o-linear-gradient(top, #bbb, #eee);\\n\\tborder-top: 1px solid #fff;\\n\\tborder-radius: 3px;\\n\\tbox-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);\\n\\tmargin: 0 7px;\\n\\tpadding: 18px 0;\\n\\tdisplay: inline-block;\\n\\tposition: relative;\\n}\\n\\n#countdown #tiles &gt; span:before{\\n\\tcontent:\\\&quot;\\\&quot;;\\n\\twidth: 100%;\\n\\theight: 13px;\\n\\tbackground: #111;\\n\\tdisplay: block;\\n\\tpadding: 0 3px;\\n\\tposition: absolute;\\n\\ttop: 41%; left: -3px;\\n\\tz-index: -1;\\n}\\n\\n#countdown #tiles &gt; span:after{\\n\\tcontent:\\\&quot;\\\&quot;;\\n\\twidth: 100%;\\n\\theight: 1px;\\n\\tbackground: #eee;\\n\\tborder-top: 1px solid #333;\\n\\tdisplay: block;\\n\\tposition: absolute;\\n\\ttop: 48%; left: 0;\\n}\\n\\n#countdown .labels{\\n\\twidth: 100%;\\n\\theight: 25px;\\n\\ttext-align: center;\\n\\tposition: absolute;\\n\\tbottom: 8px;\\n}\\n\\n#countdown .labels li{\\n\\twidth: 102px;\\n\\tfont: bold 15px &#39;Droid Sans&#39;, Arial, sans-serif;\\n\\tcolor: #f47321;\\n\\ttext-shadow: 1px 1px 0px #000;\\n\\ttext-align: center;\\n\\ttext-transform: uppercase;\\n\\tdisplay: inline-block;\\n}\&quot;,\&quot;parent\&quot;:0,\&quot;js\&quot;:\&quot;var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date\\nvar days, hours, minutes, seconds; // variables for time units\\n\\nvar countdown = document.getElementById(\\\&quot;tiles\\\&quot;); // get tag element\\n\\ngetCountdown();\\n\\nsetInterval(function () { getCountdown(); }, 1000);\\n\\nfunction getCountdown(){\\n\\n\\t// find the amount of \\\&quot;seconds\\\&quot; between now and target\\n\\tvar current_date = new Date().getTime();\\n\\tvar seconds_left = (target_date - current_date) / 1000;\\n\\n\\tdays = pad( parseInt(seconds_left / 86400) );\\n\\tseconds_left = seconds_left % 86400;\\n\\t\\t \\n\\thours = pad( parseInt(seconds_left / 3600) );\\n\\tseconds_left = seconds_left % 3600;\\n\\t\\t  \\n\\tminutes = pad( parseInt(seconds_left / 60) );\\n\\tseconds = pad( parseInt( seconds_left % 60 ) );\\n\\n\\t// format countdown string + set tag value\\n\\tcountdown.innerHTML = \\\&quot;&lt;span&gt;\\\&quot; + days + \\\&quot;&lt;/span&gt;&lt;span&gt;\\\&quot; + hours + \\\&quot;&lt;/span&gt;&lt;span&gt;\\\&quot; + minutes + \\\&quot;&lt;/span&gt;&lt;span&gt;\\\&quot; + seconds + \\\&quot;&lt;/span&gt;\\\&quot;; \\n}\\n\\nfunction pad(n) {\\n\\treturn (n &lt; 10 ? &#39;0&#39; : &#39;&#39;) + n;\\n}\\n\\n\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;html_classes\&quot;:\&quot;\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix_free\&quot;:null,\&quot;css_external\&quot;:\&quot;\&quot;,\&quot;js_library\&quot;:\&quot;jquery\&quot;,\&quot;js_modernizr\&quot;:false,\&quot;js_external\&quot;:\&quot;\&quot;,\&quot;created_at\&quot;:\&quot;2014-05-14T01:56:33.000Z\&quot;,\&quot;updated_at\&quot;:\&quot;2014-10-09T02:21:00.000Z\&quot;,\&quot;session_hash\&quot;:\&quot;ab8bd78ddf60cd319c920ce69600b10a\&quot;,\&quot;title\&quot;:\&quot;Countdown Clock\&quot;,\&quot;description\&quot;:\&quot;\&quot;,\&quot;slug_hash\&quot;:\&quot;ysowF\&quot;,\&quot;head\&quot;:\&quot;\&quot;,\&quot;private\&quot;:false,\&quot;has_animation\&quot;:true,\&quot;css_pre_processor_lib\&quot;:\&quot;\&quot;,\&quot;checksum\&quot;:32869415,\&quot;screenshot_uuid\&quot;:\&quot;3b9c57ea-cc99-4efd-a4cb-1bcca33464c3\&quot;,\&quot;team_id\&quot;:0,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;template\&quot;:false,\&quot;js_module\&quot;:null}&quot;,&quot;__profiled&quot;:{&quot;id&quot;:10638,&quot;hashid&quot;:&quot;DnqymZ&quot;,&quot;name&quot;:&quot;Matt Litzinger&quot;,&quot;username&quot;:&quot;mattlitzinger&quot;,&quot;type&quot;:&quot;user&quot;,&quot;is_team&quot;:false,&quot;base_url&quot;:&quot;/mattlitzinger&quot;},&quot;__preprocessors&quot;:{&quot;html&quot;:{&quot;syntaxes&quot;:[&quot;none&quot;,&quot;html&quot;,&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;],&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;haml&quot;:&quot;Haml&quot;,&quot;markdown&quot;:&quot;Markdown&quot;,&quot;slim&quot;:&quot;Slim&quot;,&quot;pug&quot;:&quot;Pug&quot;}},&quot;css&quot;:{&quot;syntaxes&quot;:[&quot;none&quot;,&quot;css&quot;,&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;],&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;less&quot;:&quot;Less&quot;,&quot;scss&quot;:&quot;SCSS&quot;,&quot;sass&quot;:&quot;Sass&quot;,&quot;stylus&quot;:&quot;Stylus&quot;,&quot;postcss&quot;:&quot;PostCSS&quot;},&quot;prefixes&quot;:[&quot;autoprefixer&quot;,&quot;prefixfree&quot;,&quot;neither&quot;],&quot;default_prefix&quot;:&quot;neither&quot;,&quot;exclude_emmet_syntaxes&quot;:[&quot;none&quot;,&quot;postcss&quot;],&quot;bases&quot;:[&quot;normalize&quot;,&quot;reset&quot;,&quot;neither&quot;],&quot;default_base&quot;:&quot;neither&quot;},&quot;js&quot;:{&quot;syntaxes&quot;:[&quot;none&quot;,&quot;js&quot;,&quot;coffee&quot;,&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;],&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;babel&quot;:&quot;Babel&quot;,&quot;typescript&quot;:&quot;TypeScript&quot;,&quot;coffeescript&quot;:&quot;CoffeeScript&quot;,&quot;livescript&quot;:&quot;LiveScript&quot;}}},&quot;__debug_redirect&quot;:&quot;https://codepen.io/mattlitzinger/debug/ysowF&quot;,&quot;__npm_base_url&quot;:&quot;https://bundles-development.cdpn.io&quot;,&quot;__feature_npm_enabled&quot;:false,&quot;__export_service_url&quot;:&quot;https://codepen.io/api/export&quot;,&quot;__embed_modal_script&quot;:&quot;https://static.codepen.io/assets/embed/modal/embed_modal-40f76571e8de1c02faf6cbf48585696a911518b6d877cf4460e66ed33343d740.js&quot;,&quot;__path_to_details_comment_js&quot;:&quot;https://static.codepen.io/assets/details/comment-34fc4266757aa0fea79b9c0f4eed313de2ebade6b1f1e13b1d79c6e8fc01b157.js&quot;,&quot;__syntax_highlighting_script&quot;:&quot;https://static.codepen.io/assets/comments/syntax_highlight_comments-e6f3ba191fd7c62dd615754a0e98fa4b42ae6913054946be0c87191762153993.js&quot;,&quot;__run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-a1b10d795398a6e7f6700fed41feef1bee599b1755976a6a35b8de396c37439b.js&quot;,&quot;__standalone_run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-standalone-a0b9adb0804f1fa2d16a43744bb3f58365b5e3a74bfb3b5d98dcc30a17de4ad6.js&quot;,&quot;__eijs&quot;:&quot;https://static.codepen.io/assets/embed/ei.js&quot;,&quot;__favicon_mask_icon&quot;:&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot;,&quot;__favicon_shortcut_icon&quot;:&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot;,&quot;__path_to_console_runner_js&quot;:&quot;https://static.codepen.io/assets/editor/live/console_runner-1df7d3399bdc1f40995a35209755dcfd8c7547da127f6469fd81e5fba982f6af.js&quot;,&quot;__path_to_live_reloader_js&quot;:&quot;https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js&quot;,&quot;__path_to_processor_worker&quot;:&quot;https://static.codepen.io/assets/packs/router.js&quot;,&quot;__path_to_stop_execution_on_timeout&quot;:&quot;https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js&quot;,&quot;__pen_normalize_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css&quot;,&quot;__pen_prefix_free_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js&quot;,&quot;__pen_reset_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css&quot;,&quot;__cdn_css_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdncss_data-b2a6b09b819f5d5cad330bde53c28db816c78598cbec7c82693642c0f8198d81.json&quot;,&quot;__cdn_js_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdnjs_data-1ba370c14f6d31ca1535a87b2e3e151cf4b60d08485aba18ef86b137051f0175.json&quot;,&quot;__theme_url_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/twilight-86b2d8d64ce08f901b8946aeefde8b37185c1b1699748e443c7040ab6fc223e4.css&quot;,&quot;__theme_url_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-dark-4119cb7fda8fad7093c9d147ce56ea2cee4f050a14722013e51db8770b381903.css&quot;,&quot;__theme_url_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/tomorrow-night-ef6f376bb7e65d22e1c6118709c04269929909bbd316a47d4f3f761ef3a3b5bf.css&quot;,&quot;__theme_url_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-dark-416b3c7856223969c3ad87131890a816fad6be168cb4772f30da48c3c2fb0c04.css&quot;,&quot;__theme_url_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/panda-53083e0a56ccbb4a8a54fd27e84ece17ad77f3c40c029289f8ee185c72a4c45e.css&quot;,&quot;__theme_url_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-dark-22767857bd40c4130e266b7899309e341f9f9743051193b815bb77ed5d593a91.css&quot;,&quot;__theme_url_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-dark-b2cd990a20fc197e3baf91bb6a9abb8195ea6ca9d28f1d97d9e52be3d7d0c414.css&quot;,&quot;__theme_url_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/classic-5e10c62f488a9d36035251057dc55401e3cde45c68f39445c9d0bdaf1f4a0b68.css&quot;,&quot;__theme_url_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-light-cf2e5d2881b9e220630e886b12d64b24ee4074b6c97a706c37256bec3779e78f.css&quot;,&quot;__theme_url_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/xq-light-8c05fba3f1c5ac4506b7b8a39cdd2a8a8620b57638e96afac75b1ca7d1aa34da.css&quot;,&quot;__theme_url_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-light-48e061cb09f13ae32ea85019b79647487920410070904426ed9668bd50595680.css&quot;,&quot;__theme_url_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/mdn-like-c1cf9edac5ff51387a23ef50e7f450801c4205683668ce25e6c79e6ebad7cabc.css&quot;,&quot;__theme_url_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-light-950520050dfed3b0ded6ccab6a53f153645f0e12de60d63d71a62d7c85488cac.css&quot;,&quot;__theme_url_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-light-bd1e69ff198ceb9bbc7db5ae77789b4007af9c8e3768e0632094107f371a8ce6.css&quot;,&quot;__theme_url_scoped_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/twilight-06ed8e6083de6d8e75bb68c3f808cebdf1d8a57ff9f224746ff6bf6394df3ba3.css&quot;,&quot;__theme_url_scoped_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-dark-7e808dccd448316f7e9678a577fe53e0a6bd7bd075e13d052ddf1042f3defb02.css&quot;,&quot;__theme_url_scoped_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/tomorrow-night-3c8a6adecfe3c3338a66ab0f4fb653bf2135260c109e704492ca3d67cdbfa211.css&quot;,&quot;__theme_url_scoped_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-dark-94ed79e3a9867f8217d4f961fa8c917cbf61c9332eb9b9917a0525ba1038b362.css&quot;,&quot;__theme_url_scoped_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/panda-c0c3255b11e1eabea6b15b71f21424055badf9a11b7a11db61d0852da57934ea.css&quot;,&quot;__theme_url_scoped_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-dark-5dfe2cb12431b15bae2d67527c440782bf338ab223ca0d82fb382f6215d2fcb5.css&quot;,&quot;__theme_url_scoped_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-dark-53f2f15977e87572fe0f51caebf05d82a77bd29f7620920177573a07a6b21b06.css&quot;,&quot;__theme_url_scoped_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/classic-848d561be0775737d9f0702099975943b082123918b35929a277fef6bb576756.css&quot;,&quot;__theme_url_scoped_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-light-a7f7e959c886ba8a16b5e8f487e41e0a741200d57fb966954f5bf3806dbff972.css&quot;,&quot;__theme_url_scoped_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/xq-light-515d66d2dfb1fa4fe3ce33026410ae928c23a8226d9e9e7369a4ab0362c4c8fa.css&quot;,&quot;__theme_url_scoped_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-light-e716dcb2f916bbfad1805624f2aefad6247c03d01986ad3f2e3f1e609bf6472c.css&quot;,&quot;__theme_url_scoped_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/mdn-like-a133883bde3990016b4833986d6f3614ee489c6d549c70ee4a4aa9fcced0f6d1.css&quot;,&quot;__theme_url_scoped_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-light-1554e1b25106eb79b164f090f66d6c0db53a8cbbb5efb4d5ad1deebe1ce29167.css&quot;,&quot;__theme_url_scoped_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-light-4541ed8613a627e40a99f90a50bfb8a70c2f25a922695b452f4421749dbf946c.css&quot;}">
+<script src="./abcd_files/browser_support-f97f3ef9d187e4d0436e96e4d002603225517239e71f56f5a0441cce3a0d5be4.js.tải xuống"></script>
+<script src="./abcd_files/everypage-eb67a83772e5fbc39195f098ad2e9fafa910022bcae0317bc5b3873698665a9e.js.tải xuống"></script>
+<script src="./abcd_files/vendor-303ef7934cb8b875af3c.chunk.js.tải xuống"></script>
+<script src="./abcd_files/2-303ef7934cb8b875af3c.chunk.js.tải xuống"></script>
+<script src="./abcd_files/everypage-303ef7934cb8b875af3c.js.tải xuống"></script>
+<script src="./abcd_files/processorRouter-303ef7934cb8b875af3c.js.tải xuống"></script>
+<script src="./abcd_files/commonLibs-5aa21c051f554186721dfb2e22efa0262d769cfc8be7ee60a1c6e0e44c2bcd81.js.tải xuống"></script>
+<script src="./abcd_files/codemirror-41b003ba7076ac1285f386080f36114ec6e4c72796832faf66404c01df1eb104.js.tải xuống"></script>
+<script src="./abcd_files/emmet-codemirror-plugin-222bd3cb88c16bb29433e34064a6dce2845b15c040718116c240719eaafc143f.js.tải xuống"></script>
+<script src="./abcd_files/index-4d78def98e2e641e892c1b236640dfe5c74e2e425a6945afd946faf2171370c0.js.tải xuống"></script>
+
+
+</body><sapling-controls style="display: none;">
+    <div id="edit-controls-hidden" style="opacity: 0; height: 0px;"></div>
+    <div id="edit-controls-buttons">
+      <div class="edit-controls-row">
+        <div id="accept-button">
+          <div id="accept-check"><i class="icon-sapling-check"></i></div>
+          <div id="accept-text"></div>
+        </div>
+      </div>
+      <div class="edit-controls-row">
+        <div id="ignore-button">
+          <div id="ignore-times"><i class="icon-sapling-times"></i></div>
+          <div id="ignore-text">Ignore</div>
+        </div>
+      </div>
+      <div id="premium-banner-row" class="edit-controls-row" style="display: none;">
+        <div id="premium-button">
+          <div id="premium-text">
+            Your trial ends in 1 day
+          </div>
+        </div>
+      </div>
+    </div></sapling-controls></html>
