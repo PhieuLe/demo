@@ -5,7 +5,13 @@
     left: 0;
     z-index: 9999;
     position: fixed;
-    bottom: 150px;
+    top:55%;
+	
+	
+}
+.tieudeh2{
+    color: #91aeff;
+    font-family: cursive;
 }
 .fa{
     padding-right: 5px;
@@ -49,19 +55,16 @@
     border-radius: 20px;
     text-align: center;
     padding: 5px;
-    color: #fff;
-    font-weight: 600;
 }
 .bot{
     height: 350px;
     width: 100%;
+    /* border: 1px solid red; */
     padding: 10px;
     font-weight: 700;
-    font-size: 18px;
-    font-family: auto;
 }
 .dethithu{
-    height: 500px;
+    
     text-align: center;
     font-family: monospace;
     padding-top: 50px;
@@ -73,7 +76,7 @@
     border-bottom-right-radius: 20px;
 }
 .container-fluid {
-    width: 82%;
+    width: 100%;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -121,20 +124,50 @@
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
-.gioithieu{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.carousel-item {
+    height: auto;
 }
-.duongcong{
-    border-top-left-radius: 32%;
-    border-bottom-right-radius: 32%;
-    box-shadow: 2px 5px;
-    margin-top: 20px;
+.carousel-control-next {
+    margin-top: 16%;
 }
-.container {
-    width: 90%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.carousel-control-prev {
+    margin-top: 16%;
+}
+.nhapnhay{
+    
+    margin-bottom: 50px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #2ea0ed;
+    animation: nhapnhayy .5s  infinite;
+   
+}
+@keyframes nhapnhayy{
+    0%{
+        color: red;
+       
+    }
+    50%{
+        color: yellow;
+      
+    }
+    100%{
+        color: #F00;
+       
+    }
+}
+@-webkit-keyframes nhapnhayy{
+    0%{
+        color: red;
+        background: #2ea0ed;
+    }
+    50%{
+        color: yellow;
+        background: #2ea0ed;
+    }
+    100%{
+        color: #F00;
+        background: #2ea0ed;
+    }
 }

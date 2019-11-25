@@ -1,0 +1,57 @@
+.a{
+    background-image: url("/assets/image/bground.jpg");
+    padding: 10%;
+}
+.title{
+    color: #fff;
+    font-size: 52px;
+    font-family: initial;
+}
+.md-left{
+    background-image: url("/assets/image/imgdangnhap.jpg");
+    height: 500px;
+    text-align: center;
+    padding-top: 12%;
+    color: #fff;
+    font-size: 52px;
+    font-family: initial;
+    
+}
+.md-right{
+    background-color: #202123;
+    padding-bottom: 20px;
+    padding-top: 12%;
+}
+.form-control{
+    background-color: #202123;
+    width: 90%;
+    height: 50px;
+    color: #fff;
+}
+.form-control:hover{
+    background-color: #fff;
+    border-bottom: 1px solid blueviolet;
+    height: 50px;
+    color: #000;
+}
+.form-group{
+    text-align: center;
+    
+}
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .container{
+    padding-top:50px;
+    margin: auto;
+  }
+  .quenmk{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+  }

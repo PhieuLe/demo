@@ -6,6 +6,8 @@
     z-index: 9999;
     position: fixed;
     bottom: 150px;
+	
+	
 }
 .fa{
     padding-right: 5px;
@@ -73,7 +75,7 @@
     border-bottom-right-radius: 20px;
 }
 .container-fluid {
-    width: 82%;
+    width: 100%;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -120,21 +122,4 @@
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
-}
-.gioithieu{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.duongcong{
-    border-top-left-radius: 32%;
-    border-bottom-right-radius: 32%;
-    box-shadow: 2px 5px;
-    margin-top: 20px;
-}
-.container {
-    width: 90%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }

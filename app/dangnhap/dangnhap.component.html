@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="a">
+    <div class="title row">ĐĂNG NHẬP</div>
+    <div class="b row">
+        <div class="col-md-6 md-left">
+                <img src="./assets/image/logoaztest.png" width=150spx><br>
+                OFFICIAL</div>
+        <div class="col-md-6 md-right">
+            <div class="">
+                <form action="/trangchu" class="was-validated" (ngSubmit)="onsubmit(signin);" #signin="ngForm">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="uname" placeholder="Username" name="uname" [(ngModel)]="uname" required>
+                   
+                  </div>
+                  <div class="form-group">
+                    <input [type]="showpassword" class="form-control" id="email" placeholder="Password" name="pass" [(ngModel)]="pass" required>
+                    <span toggle="#password-field" class="fas fa-fw field-icon toggle-password" style="color: brown" (click)="hello()">
+                        <b [ngClass]="{'fa-eye': anhien}" ></b>
+                        <b [ngClass]="{'fa-eye-slash': hienan}"  ></b></span>
+                  </div>
+                 
+                  <div class="form-group">
+                  <button type="submit" class="btn btn-success" (click)="dangnhap();" [disabled]="signin.invalid">
+                    Đăng Nhập
+                  </button>
+                </div>
+                <div class="form-group" style="float: right;">
+                    <a class="quenmk" routerLink="#">?Quên mật khẩu</a>                      
+                </div>
+                </form>
+              </div>
+        </div>
+    </div>
+</div>

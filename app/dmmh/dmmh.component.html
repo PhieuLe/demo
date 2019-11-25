@@ -1,0 +1,94 @@
+<app-header></app-header>
+<form>
+  <div class="row" style="margin-top: 50px">
+    <div class="col-md-8">
+      <h2>Kiểm Tra lập trình PHP căn bản</h2><br>
+      <h4>Thời gian :120'</h4><br>
+    </div>
+    <div class="col-md-4" [hidden]="anvinhvien">
+      <iframe src="./assets/image/abcd/abcd.html" frameborder="0" allowtransparency="true" scrolling="yes" width="100%"
+        height="200px" [hidden]="hiden" class="iframetime">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+    </div>
+  </div>
+  <div class="container-fluid row" style="margin-bottom: 50px;" [hidden]="hiden"><br>
+    <div class="col-md-9">
+      <div class="mar-left">
+
+        <div class="card">
+          <div class="card-header">Lê Khả Phiêu(CD18LW1)</div>
+          <div class="card-body">
+            <table class="table">
+              <tbody
+                *ngFor="let questions of question | orderBy: nameno | paginate: { itemsPerPage: itempage, currentPage: p }">
+
+                <tr>
+                  <td>{{questions.stt}}.{{questions.debai}}</td>
+                </tr>
+
+                <tr>
+                  <td>{{questions.cauhoi}} </td>
+                </tr>
+                <tr>
+                  <td
+                    [ngStyle]="{'background-color': (a == questions.valuetrue)? colortrue:(a == questions.value)?colorfalse:'white' }">
+                    <b class="fa"><input type="radio" [name]="questions.value" value="a" [(ngModel)]="questions.value">
+                      A.</b>{{questions.a}}</td>
+                </tr>
+                <tr>
+                  <td
+                    [ngStyle]="{'background-color': (b == questions.valuetrue) ? colortrue:(b == questions.value)?colorfalse:'white' }">
+                    <b class="fa"><input type="radio" [name]="questions.value" value="b" [(ngModel)]="questions.value">
+                      B.</b>{{questions.b}}</td>
+                </tr>
+                <tr>
+                  <td
+                    [ngStyle]="{'background-color': (c == questions.valuetrue) ?colortrue:(c == questions.value)?colorfalse:'white' }">
+                    <b class="fa"><input type="radio" [name]="questions.value" value="c" [(ngModel)]="questions.value">
+                      C.</b>{{questions.c}}</td>
+                </tr>
+                <tr>
+                  <td
+                    [ngStyle]="{'background-color': (d == questions.valuetrue) ?colortrue:(d == questions.value)?colorfalse:'white'}">
+                    <b class="fa"><input type="radio" [name]="questions.value" value="d" [(ngModel)]="questions.value"
+                        [disabled]="dis"> D.</b>{{questions.d}}</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="card-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card cotdoc">
+        <ul>
+          <li class="page-item"><a class="page-link" (click)="Previous()"><i class="fa fa-angle-double-left"
+                aria-hidden="true"></i>Previous </a></li>
+          <li class="page-item">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+          </li>
+          <li class="page-item"><a class="page-link" (click)="next()"> Next<i class="fa fa-angle-double-right"
+                aria-hidden="true"></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card container result" [hidden]="!hiden">
+    <div class="card-header">Lê Khả Phiêu(CD18LW1)</div>
+    <div class="card-body">
+      <h3>Mức độ hoàn thành : <b class="showkq">{{complete}} %</b></h3><br>
+      <h3>Số câu đúng :<b class="showkq"> {{question.length-socausai}}/{{question.length}}</b> </h3><br>
+      <h3>Số câu sai :<b class="showkq"> {{socausai}}/{{question.length}}</b> </h3> <br>
+    </div>
+    <div class="card-footer">
+      <h2>Tổng điểm : <b class="showkq">{{tong}}</b> </h2>
+    </div>
+  </div>
+  <div class="btnsubmit"><button class="btn btn-primary" (click)="onSubmit();">{{hiden?back:nopbai}} </button></div>
+
+</form>

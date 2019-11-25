@@ -1,0 +1,53 @@
+
+body{
+    height: 1500px;
+}
+.fa{
+    padding-right: 5px;
+}
+.img{
+    width: 100%;
+    height: 300px;
+}
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+.col-md-9,.col-md-3{
+    padding: 0px;
+}
+.cotdoc{
+    padding-right: 35px;
+    padding-top: 14px;
+    margin-right: 5%;
+}
+.page-item{
+    list-style: none;
+}
+.navbar-nav{
+    float:right;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.result{
+    margin-bottom: 50px;
+}
+.btnsubmit{
+    margin-bottom: 40px;
+    /* float: right; */
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.mar-left{
+    margin-left: 15%;
+}
+.showkq{
+    color: #47a042;
+    padding: 10px;
+}
+.iframetime{
+    position: absolute;
+    width: 300px;
+}

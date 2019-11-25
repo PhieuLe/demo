@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="row" style="margin-left: 65px;margin-right:0px;">
+  <app-tableft></app-tableft>
+  <div class="col-md-9 container">
+    <div class="row">
+      <div class="col-md-5 menumh hover14 column" *ngFor="let subject of subject" style="float: left;">
+            <a class="nav-link" routerLink="/hoidap/{{subject.monhoc}}">
+              <figure><img src="{{subject.img}}" width="300px" height="300px"></figure>
+              <div class="spanhv">{{subject.monhoc}}</div>
+              {{subject.monhoc}}
+            </a>
+      </div>
+  
+    </div>
+    
+</div>

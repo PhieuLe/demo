@@ -6,6 +6,8 @@
     z-index: 9999;
     position: fixed;
     bottom: 150px;
+	
+	
 }
 .fa{
     padding-right: 5px;
@@ -73,7 +75,7 @@
     border-bottom-right-radius: 20px;
 }
 .container-fluid {
-    width: 82%;
+    width: 100%;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -121,20 +123,20 @@
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
-.gioithieu{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.form-control{
+    margin-left: 0px;
+    margin-top:0px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    box-shadow: 3px 4px;
 }
-.duongcong{
-    border-top-left-radius: 32%;
-    border-bottom-right-radius: 32%;
-    box-shadow: 2px 5px;
-    margin-top: 20px;
-}
-.container {
-    width: 90%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.dangki{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-image: url('https://w.ladicdn.com/57b167caca57d39c18a1c57e/ladipage3-20190830041749.svg');
+    padding: 10px;
+    box-shadow: 4px 1px 5px 2px;
+    
 }
